@@ -1,0 +1,59 @@
+.form-control.error {
+    border: 1px solid #F00 !important;
+    border-radius:0;
+    color:#F00;
+}
+
+label.error {
+    color: red;
+    font-size: 9px;
+    font-weight: normal;
+}
+
+.form-thanks-content {
+    text-align: center;
+    h3 {
+        font-size: 22px;
+        letter-spacing: 1.2px;
+        color: #4A90E2;
+    }
+    p {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 40px;
+    }
+}
+
+
+// request call form
+.form-thanks-requestcall-content {
+    background-color: #0080E1;
+    padding: 20px;
+    min-height: 493px;
+    position: relative;
+
+    .thanks {
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: left;
+        color: #fff;
+    }
+    h3 {
+        color: #fff;
+        padding: 20px 0;
+        border-bottom: 2px solid #fff;
+    }
+    p {
+        font-weight: 100;
+        font-size: 14.32px;
+    }
+    p.reset-form {
+        position: absolute;
+        bottom: 30px;
+        font-weight: 100;
+        font-size: 14.32px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,137 @@
+/***********************
+    MEDIA QUERY
+************************/
+
+@media (max-width: 1200px){
+
+    .text-video {
+        top: 49%!important;
+    }
+
+}
+
+
+
+/***********************
+    DESKTOP
+************************/
+@media (max-width: 991px){
+
+    #form1 {
+        top: -60px;
+        margin-bottom: 0;
+    }
+
+    .text-video-text {
+        margin-top: 0px!important;
+    }
+}
+
+
+/***********************
+    TABLETS
+************************/
+@media (max-width: 767px){
+
+#section1 {
+
+
+}
+ 
+
+}
+
+/***********************
+    MOBILE PHONE
+************************/
+
+@media (max-width: 480px) {
+
+
+   .mobile-header {
+
+        background: url('../images/video-bg-mobile.jpg') -140px 0 no-repeat;
+        min-height: 700px;
+        display: block!important;
+        position: relative;
+
+        .logo-header {
+            position: relative;
+            width: 140px;
+            margin-top: 4em;
+        }
+
+        .text-video {
+            position: relative;
+            color: #fff;
+            text-align: left;
+            width: 100%;
+            left: 0;
+            margin-top: 60px;
+
+
+            h2 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 16px;
+                max-width: 650px;
+                margin: 0 auto;
+            }
+
+            .text-video-text {
+                padding: 0 15px;
+            }
+
+            .text-video-bg {
+                position: absolute;
+                mix-blend-mode: multiply;
+                background-color: $main-color;
+                    opacity: 0.8;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 9;
+            }
+
+        }      
+    } 
+
+
+    header#video-home {
+        
+        display: none;
+        
+        .text-video-bg {
+            display: none;
+
+        }
+
+        video {
+            display: none;
+        }
+        
+        .text-video-text {
+            text-align: left;
+            padding: 0 15px;
+        }
+
+        .text-video {
+            margin-top: -100px;
+        }
+
+        .mobile-header {
+            img {
+                position: relative;
+                left: -130px;
+                z-index: -9;
+            }
+
+        }
+
+
+    }
+
+
+}
+

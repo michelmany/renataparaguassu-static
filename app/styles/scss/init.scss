@@ -1,0 +1,20 @@
+//misc settings
+@import 'config/_settings';
+@import 'config/_mixins';
+@import 'config/_variables';
+
+//frameworks
+
+//global things
+// @import 'general/_reset';
+@import 'layout/_main';
+
+
+//pages
+@import 'pages/_home';
+
+
+
+@import 'layout/_responsive';
+@import 'layout/_forms';
+

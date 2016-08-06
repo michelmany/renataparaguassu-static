@@ -1,0 +1,101 @@
+body {
+    font-family: $main-font!important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $second-font;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 36px;
+    color: $main-color;
+    letter-spacing: 0.4px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.img-content {
+    overflow: hidden;
+}
+
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.btn-warning {
+    background-color: $orange;
+    &:hover {
+        background-color: $green;
+        border-color: $green;
+    }
+}
+
+.btn-default {
+    background-color: #fff;
+    border-color: $blue;
+    color: #7F7F7F;
+    &:hover {
+        background-color: $green;
+        border-color: $green;
+        color: #fff;
+    }    
+}
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+    color: #fff;
+    background-color: $blue;
+    border-color: $blue;
+}  
+.btn-default.focus, .btn-default:focus, .open>.dropdown-toggle.btn-default {
+    color: #fff;
+    background-color: $blue;
+    border-color: $blue;
+}  
+
+.btn-default {
+
+  &:focus,
+  &.focus {
+    color: #fff;
+    background-color: $blue;
+    border-color: $blue;
+    outline:0;    
+  }
+  &:active,
+  &.active,
+    .open > .dropdown-toggle {
+        color: #fff;
+        background-color: $blue;
+        border-color: $blue;
+
+        &:hover,
+        &:focus,
+        &.focus {
+        color: #fff;
+        background-color: $blue;
+        border-color: $blue;
+        outline:0;    
+        }
+    }
+    &:active,
+    &.active,
+    .open > .dropdown-toggle {
+        background-image: none;
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        &:hover,
+        &:focus,
+        &.focus {
+            color: #fff;
+            background-color: $blue;
+            border-color: $blue;
+            outline:0;    
+        }
+    }    
+
+}
