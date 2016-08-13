@@ -1,0 +1,100 @@
+.navbar {
+    padding: 60px 0 0;
+    margin-bottom: 0;
+    @media (min-width: 992px) {
+        padding: 60px 0;
+    }
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        max-width: 262px;
+    }
+}
+
+.navbar-default {
+    border-top: 10px solid $color-blue-brand-1;    
+    background-color: white;
+    border-radius: 0;
+    border-bottom-color: white;
+}
+
+.nav {
+    @media (min-width: 992px) {
+        float: right;
+        font-size: 0.9em;
+        padding: inherit 0;
+    }
+     @media (min-width: 1200px) {
+        float: right;
+        font-size: inherit;        
+     }
+}
+.nav>li>a {
+    @media (min-width: 992px) and (max-width: 1200px) {
+        padding: 10px 8px;    
+    }
+}
+
+#navbar {
+    li {
+        margin-right: 4px;
+        a{
+            color: $color-blue-brand-1;
+            font-size: convertSizing(17,14);
+            border-color: $color-blue-brand-1;
+            border-radius: 15px;
+            border: 2px solid transparent;            
+            &:hover, &:focus, &:active {
+                border-color: $color-blue-brand-1;
+                border-radius: 15px;
+                border: 2px solid $color-blue-brand-1;
+            }
+        }
+    }
+}
+
+.navbar-toggle {
+    margin-bottom: 68px;
+}
+
+// Aparece Bootstrap Mobile Menu em 991px
+@media (max-width: 991px) {
+  .navbar-header {
+      float: none;
+  }
+  .navbar-left,.navbar-right {
+      float: none !important;
+  }
+  .navbar-toggle {
+      display: block;
+  }
+  .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+  }
+  .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+      display: none!important;
+  }
+  .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+      float: none;
+  }
+  .navbar-nav>li>a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .collapse.in{
+      display:block !important;
+  }
+}

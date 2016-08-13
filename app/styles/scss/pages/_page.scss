@@ -1,0 +1,21 @@
+.page {
+    &-head {
+        background-color: $color-blue-brand-2;
+        padding: 20px 0 15px;
+            h2 {
+                color: white;
+                margin-bottom: 8px;
+                img {
+                    vertical-align: middle;
+                    margin-top: -10px;
+                }
+            }     
+    }
+    &-content {
+        padding: 75px 0;
+        p {
+            text-align: justify;
+
+        }
+    }
+}

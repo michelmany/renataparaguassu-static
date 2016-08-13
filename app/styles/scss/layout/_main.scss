@@ -1,5 +1,5 @@
 body {
-    font-family: $main-font!important;
+    font-family: $main-font;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -7,14 +7,20 @@ h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
 }
 
+h2 {
+    font-size: convertSizing(26, 14);
+    font-weight: 400;
+    color: $color-font-gray;
+}
+
 h3 {
     font-size: 36px;
-    color: $main-color;
     letter-spacing: 0.4px;
 }
 
 p {
-    font-size: 16px;
+    font-size: convertSizing(13, 14);
+    color: $color-gray-light;
 }
 
 .img-content {
@@ -98,4 +104,29 @@ p {
         }
     }    
 
+}
+
+
+/***********************
+  OUTLINE BUTTONS
+************************/
+
+.btn.outline {
+    background: none;
+    padding: 12px 22px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+.btn-default.outline {
+    border: 2px solid white;
+    color: white;
+}
+.btn-default.outline:hover, .btn-default.outline:focus, .btn-default.outline:active, .btn-default.outline.active, .open > .dropdown-toggle.btn-default {
+    color: $color-yellow-brand;
+    border-color: $color-yellow-brand;
+}
+.btn-default.outline:active, .btn-default.outline.active {
+    border-color: white;
+    color: white;
+    box-shadow: none;
 }

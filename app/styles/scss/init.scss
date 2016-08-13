@@ -3,18 +3,18 @@
 @import 'config/_mixins';
 @import 'config/_variables';
 
-//frameworks
 
 //global things
-// @import 'general/_reset';
+@import 'general/_reset';
 @import 'layout/_main';
 
+//layouts
+@import 'layout/_responsive';
+@import 'layout/_forms';
+@import 'layout/_navigation';
+@import 'layout/_footer';
 
 //pages
 @import 'pages/_home';
-
-
-
-@import 'layout/_responsive';
-@import 'layout/_forms';
+@import 'pages/_page';
 
